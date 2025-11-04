@@ -1,0 +1,47 @@
+.page-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.rules-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.rule-section {
+  margin-bottom: 3rem;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.rule-section h2 {
+  border-bottom: 2px solid #8cb3cd;
+}
+
+.rule-item {
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .rule-section {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  .rule-section h2 {
+    font-size: 1.5rem;
+  }
+}

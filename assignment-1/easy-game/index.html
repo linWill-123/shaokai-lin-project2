@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kai's Sudoku - Easy Game</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="game.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">Kai's Sudoku</div>
+        <div class="nav-menu">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="../selection/index.html" class="nav-link">Games</a>
+          <a href="../rules/index.html" class="nav-link">Rules</a>
+          <a href="../highscores/index.html" class="nav-link">High Scores</a>
+          <a href="../login/index.html" class="nav-link">Login</a>
+          <a href="../register/index.html" class="nav-link">Register</a>
+        </div>
+        <div class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+    <main class="main-content">
+      <div class="game-container">
+        <div class="game-header">
+          <div class="game-meta">
+            <div>
+              <h1>Sudoku</h1>
+              <div class="difficulty-badge easy-btn">Easy</div>
+            </div>
+            <div class="timer-container">
+              <div class="timer">08:24</div>
+              <button class="timer-btn">Pause</button>
+            </div>
+          </div>
+          <div class="game-date">September 25, 2025</div>
+        </div>
+
+        <div class="game-board">
+          <div class="sudoku-grid-6x6">
+            <!-- Row 1 -->
+            <input
+              type="number"
+              min="1"
+              max="6"
+              class="sudoku-cell given"
+              value="2"
+              readonly
+            />
+            <input type="number" min="1" max="6" class="sudoku-cell" />
+            <input
+              type="number"
+              min="1"
+              max="6"
+              class="sudoku-cell given"
+              value="4"
+              readonly
+            />
+            <input type="number" min="1" max="6" class="sudoku-cell" />
+            <input
+              type="number"
+              min="1"
+              max="6"
+              class="sudoku-cell given"
+              value="3"
+              readonly
+            />
+            <input type="number" min="1" max="6" class="sudoku-cell" />
+
+            <!-- Row 2 -->
+            <input type="number" min="1" max="6" class="sudoku-cell" />
+            <input
+              type="number"
+              min="1"
+              max="6"
+              class="sudoku-cell given"
+              value="3"
+              readonly
+            />
+            <input type="number" min="1" max="6" class="sudoku-cell" />
+            <input
+              type="number"
+              min="1"
+              max="6"
+              class="sudoku-cell given"
+              value="1"
+              readonly
+            />
+            <input type="number" min="1" max="6" class="sudoku-cell" />
+            <input
+              type="number"
+              min="1"
+              max="6"
+              class="sudoku-cell given"
+              value="5"
+              readonly
+            />
+
+            <!-- Row 3 -->
+            <input
+              type="number"
+              min="1"
+              max="6"
+              class="sudoku-cell given"
+              value="5"
+              readonly
+            />
+            <input type="number" min="1" max="6" class="sudoku-cell" />
+            <input type="number" min="1" max="6" class="sudoku-cell" />
+            <input type="number" min="1" max="6" class="sudoku-cell" />
+            <input type="number" min="1" max="6" class="sudoku-cell" />
+            <input
+              type="number"
+              min="1"
+              max="6"
+              class="sudoku-cell given"
+              value="2"
+              readonly
+            />
+
+            <!-- Row 4 -->
+            <input
+              type="number"
+              min="1"
+              max="6"
+              class="sudoku-cell given"
+              value="1"
+              readonly
+            />
+            <input type="number" min="1" max="6" class="sudoku-cell" />
+            <input type="number" min="1" max="6" class="sudoku-cell" />
+            <input type="number" min="1" max="6" class="sudoku-cell" />
+            <input type="number" min="1" max="6" class="sudoku-cell" />
+            <input
+              type="number"
+              min="1"
+              max="6"
+              class="sudoku-cell given"
+              value="3"
+              readonly
+            />
+
+            <!-- Row 5 -->
+            <input
+              type="number"
+              min="1"
+              max="6"
+              class="sudoku-cell given"
+              value="6"
+              readonly
+            />
+            <input type="number" min="1" max="6" class="sudoku-cell" />
+            <input
+              type="number"
+              min="1"
+              max="6"
+              class="sudoku-cell given"
+              value="2"
+              readonly
+            />
+            <input type="number" min="1" max="6" class="sudoku-cell" />
+            <input
+              type="number"
+              min="1"
+              max="6"
+              class="sudoku-cell given"
+              value="1"
+              readonly
+            />
+            <input type="number" min="1" max="6" class="sudoku-cell" />
+
+            <!-- Row 6 -->
+            <input type="number" min="1" max="6" class="sudoku-cell" />
+            <input
+              type="number"
+              min="1"
+              max="6"
+              class="sudoku-cell given"
+              value="1"
+              readonly
+            />
+            <input type="number" min="1" max="6" class="sudoku-cell" />
+            <input
+              type="number"
+              min="1"
+              max="6"
+              class="sudoku-cell given"
+              value="6"
+              readonly
+            />
+            <input type="number" min="1" max="6" class="sudoku-cell" />
+            <input
+              type="number"
+              min="1"
+              max="6"
+              class="sudoku-cell given"
+              value="4"
+              readonly
+            />
+          </div>
+        </div>
+        <div class="game-controls">
+          <div class="control-group">
+            <button class="game-btn secondary">Reset</button>
+            <button class="game-btn secondary">Check Cell</button>
+            <button class="game-btn secondary">Check Puzzle</button>
+            <button class="game-btn secondary">Reveal Cell</button>
+            <button class="game-btn secondary">Reveal Puzzle</button>
+          </div>
+          <div class="control-group">
+            <button class="game-btn primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 SudokuMaster. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

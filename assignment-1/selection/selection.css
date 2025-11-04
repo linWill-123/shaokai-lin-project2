@@ -1,0 +1,118 @@
+/* Body Styles */
+.page-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.page-subtitle {
+  text-align: center;
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 3rem;
+}
+
+.game-selector {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+/* Selector Tabs */
+.selector-tabs {
+  display: flex;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  border: none;
+  color: #6b7280;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-right: 1px solid #d1d5db;
+}
+
+.tab-btn:last-child {
+  border-right: none;
+}
+
+.tab-btn:hover {
+  background-color: #f9fafb;
+}
+
+.tab-btn.active {
+  background-color: #3b82f6;
+  color: white;
+}
+
+/* game items */
+.game-item {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: all 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.game-item:hover {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+}
+
+.game-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 120px;
+  text-align: center;
+}
+
+.date-text {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.difficulty-tag {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 100px;
+}
+
+.game-info {
+  flex: 1;
+}
+
+.play-btn {
+  background-color: #98e7ac;
+  color: white;
+  border: none;
+  text-decoration: none;
+  min-width: 80px;
+  text-align: center;
+}
+
+.play-btn:hover {
+  background-color: #42ae59;
+}
+
+@media (max-width: 768px) {
+  .game-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
