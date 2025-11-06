@@ -1,7 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
-import { Home } from "../pages/Home";
 import { ROUTES } from "../constants/routes";
+import { RulesPage } from "../pages/Rules";
+import { HighScoresPage } from "../pages/HighScores";
+import { LoginPage } from "../pages/Login";
+import { RegisterPage } from "../pages/Register";
+import { HomePage } from "../pages/Home";
+import { SelectionPage } from "../pages/Selection";
 
 export const router = createBrowserRouter([
   {
@@ -10,8 +15,37 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />,
+        element: <HomePage />,
       },
+      {
+        path: "games",
+        element: <SelectionPage />,
+      },
+      {
+        path: "rules",
+        element: <RulesPage />,
+      },
+      {
+        path: "scores",
+        element: <HighScoresPage />,
+      },
+      {
+        path: "login",
+        element: <LoginPage />,
+      },
+      {
+        path: "register",
+        element: <RegisterPage />,
+      },
+      // Game routes will be added later
+      // {
+      //   path: "games/easy",
+      //   element: <EasyGame />,
+      // },
+      // {
+      //   path: "games/normal",
+      //   element: <NormalGame />,
+      // },
     ],
   },
 ]);

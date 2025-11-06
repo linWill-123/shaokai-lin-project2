@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { ROUTES } from "../../constants/routes";
-import "./Home.css";
+import "./HomePage.css";
 
-export const Home = () => {
+export const HomePage = () => {
   return (
     <div className="page-container">
       <div className="hero-section">

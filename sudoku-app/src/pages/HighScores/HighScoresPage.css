@@ -1,0 +1,147 @@
+/* Body Styles */
+.page-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.page-subtitle {
+  text-align: center;
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 3rem;
+}
+
+.leaderboard-section {
+  margin-bottom: 4rem;
+}
+
+.leaderboard {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.leaderboard-item {
+  display: flex;
+  align-items: center;
+  padding: 1.75rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.leaderboard-item:hover {
+  background-color: #f8f9fa;
+  transform: translateX(5px);
+}
+
+.rank {
+  display: flex;
+  align-items: center;
+  min-width: 80px;
+}
+
+.rank-number {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #5c8ab8;
+}
+
+.player-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.player-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 24px;
+  flex-shrink: 0;
+}
+
+.username {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.25rem;
+}
+
+.stats {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+/* Use nth child to fit requirements */
+.leaderboard-item:first-child .rank-number {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #e74c3c;
+}
+
+.leaderboard-item:nth-child(2) .rank-number {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #f39c12;
+}
+
+.leaderboard-item:nth-child(3) .rank-number {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #27ae60;
+}
+
+.leaderboard-item:first-child .player-info .username {
+  color: #e74c3c;
+}
+
+.leaderboard-item:nth-child(2) .player-info .username {
+  color: #f39c12;
+}
+
+.leaderboard-item:nth-child(3) .player-info .username {
+  color: #27ae60;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .leaderboard {
+    margin: 0 1rem;
+  }
+
+  .leaderboard-item {
+    padding: 0.75rem;
+  }
+
+  .rank {
+    min-width: 65px;
+  }
+
+  .rank-number {
+    font-size: 1rem;
+  }
+
+  .username {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  .leaderboard-item:hover,
+  .achievement-item:hover {
+    transform: none;
+  }
+}
