@@ -3,6 +3,7 @@ import { useSudoku } from "../../context/SudokuContext";
 import SudokuCell from "../SudokuCell/SudokuCell";
 import { easySudoku, hardSudoku } from "../../utils/sudoku_generator";
 import "./SudokuGame.css";
+import GameControls from "../GameControls/GameControls";
 
 const SudokuGame = ({ mode, title, difficulty }) => {
   const {
@@ -132,26 +133,7 @@ const SudokuGame = ({ mode, title, difficulty }) => {
               )}
             </div>
           </div>
-          <div className="game-controls">
-            <div className="control-group">
-              <button
-                className="game-btn secondary"
-                onClick={handleReset}
-                disabled={isPaused}
-              >
-                Reset
-              </button>
-            </div>
-            <div className="control-group">
-              <button
-                className="game-btn primary"
-                onClick={handleNewGame}
-                disabled={isPaused}
-              >
-                New Game
-              </button>
-            </div>
-          </div>
+          <GameControls onNewGame={handleNewGame} onReset={handleReset} />
         </div>
       )}
     </div>

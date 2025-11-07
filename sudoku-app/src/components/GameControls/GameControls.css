@@ -1,0 +1,50 @@
+/* GameControls specific styles */
+.game-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.control-group {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.game-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  background-color: white;
+  color: #374151;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.game-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.game-btn.primary {
+  background-color: #16a34a;
+  color: white;
+  border-color: #16a34a;
+}
+
+@media (max-width: 768px) {
+  .control-group {
+    flex-direction: column;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .game-btn {
+    width: 100%;
+  }
+}
