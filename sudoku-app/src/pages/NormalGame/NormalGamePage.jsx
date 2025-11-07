@@ -1,5 +1,5 @@
 import { SudokuProvider } from "../../context/SudokuContext";
-import SudokuGame from "../../components/SuokuGame/SudokuGame";
+import SudokuGame from "../../components/SudokuGame/SudokuGame";
 
 export const NormalGamePage = () => {
   return (
